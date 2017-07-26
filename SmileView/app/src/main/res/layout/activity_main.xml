@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/background"
+    tools:context="com.zlc16901.smileview.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/backGround"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/yellow_background"
+        android:layout_above="@+id/seekBar"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/smileFace"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/like_1"/>
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+    <com.zlc16901.smileview.SmileView
+        android:id="@+id/smileView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+       />
+
+</RelativeLayout>
